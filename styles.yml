@@ -1,0 +1,113 @@
+# {} = user input
+
+clean:
+  sample:
+    prompt: '{}'
+    seed: 1326917536
+  prompt: '{}'
+  negative: '{}'
+  seed: -1
+  width: 512
+  height: 512
+  cfg_scale: 7.5
+  batch_size: 4
+  iterations: 30
+  restore_faces: true
+
+_default:
+  sample:
+    prompt: 'ultra realistic illustration of taco cat, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha'
+    seed: 1326917536
+  prompt: 'ultra realistic illustration of {}, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha'
+  negative: '((nudity)) {}'
+  seed: -1
+  width: 512
+  height: 512
+  cfg_scale: 9.0
+  batch_size: 4
+  iterations: 40
+  restore_faces: true
+
+_testing:
+  sample:
+    prompt: 'ultra realistic illustration of taco cat, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha'
+    seed: 1326917536
+  prompt: 'ultra realistic illustration of {}, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha'
+  negative: '((nudity)) {}'
+  seed: -1
+  width: 512
+  height: 512
+  cfg_scale: 9.0
+  batch_size: 1
+  iterations: 2
+  restore_faces: true
+
+dream:
+  sample:
+    prompt: 'ultra realistic illustration of taco cat, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha'
+    seed: 1326917536
+  prompt: 'ultra realistic illustration of {}, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha'
+  negative: '{}'
+  seed: -1
+  width: 600
+  height: 800
+  cfg_scale: 9.0
+  batch_size: 2
+  iterations: 40
+  restore_faces: true
+
+winter_day:
+  sample:
+    prompt: 'nature photo of a two snow owls backlit by the moon light trying to stay warm by nestling each other in a blizzard'
+    seed: 982713111
+  prompt: 'nature photo of a two {} backlit by the moon light trying to stay warm by nestling each other in a blizzard'
+  negative: '((nudity)) {}'
+  seed: -1
+  width: 600
+  height: 800
+  cfg_scale: 13.0
+  batch_size: 2
+  iterations: 40
+  restore_faces: true
+
+vibrant_painting:
+  sample:
+    prompt: 'a girl, vivid colors, smokey background, bright colors, intricate, beautiful lighting, illustration, oil painting in the style of Norman Rockwrll, portrait, photoshop painting journey'
+    seed: 1234063421
+  prompt: '{}, vivid colors, smokey background, bright colors, intricate, beautiful lighting, illustration, oil painting in the style of Norman Rockwrll, portrait, photoshop painting journey'
+  negative: '{}'
+  seed: -1
+  width: 600
+  height: 800
+  cfg_scale: 13.0
+  batch_size: 2
+  iterations: 40
+  restore_faces: true
+
+gow:
+  sample:
+    prompt: 'Symmetry!! portrait of medusa in the style of god of war, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k'
+    seed: 2836718768
+  prompt: 'Symmetry!! {} in the style of god of war, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k'
+  negative: '{}'
+  seed: -1
+  width: 512
+  height: 512
+  cfg_scale: 15.0
+  batch_size: 4
+  iterations: 40
+  restore_faces: true
+
+futuristic_ruins:
+  sample:
+    prompt: 'beautiful female assassin wearing cyberpunk clothing, respirator, cybernetic face, detailed portrait, cell shaded, 4 k, vivid colours, concept art by wlop, ilya kuvshinov, artgerm, krenz cushart, greg rutkowski, pixiv. cinematic dramatic atmosphere, sharp focus, volumetric lighting, cinematic lighting, studio quality'
+    seed: 3322184339
+  prompt: '{}, cell shaded, 4 k, vivid colours, concept art by wlop, ilya kuvshinov, artgerm, krenz cushart, greg rutkowski, pixiv. cinematic dramatic atmosphere, sharp focus, volumetric lighting, cinematic lighting, studio quality'
+  negative: '{}'
+  seed: -1
+  width: 600
+  height: 800
+  cfg_scale: 10.5
+  batch_size: 2
+  iterations: 40
+  restore_faces: true

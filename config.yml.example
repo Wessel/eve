@@ -1,0 +1,40 @@
+cooldowns:
+  _ignore:
+    - 107130754189766656
+  # [Category("stablediffusion")]
+  show:     10000
+  imagine:  30000
+
+stable_diffusion:
+  _api: 'http://127.0.0.1:7860'
+  _notice_string: '*<:ohRightAkari:709344398776729604> Finding any inappropriate/offending images? Feel free to report them using `/report` (Anonymous)*'
+  prompt: '{}'
+  negative: '{}'
+  seed: -1
+  width: 512 # 512 . 1024
+  height: 512 # 512 . 572  cfg_scale: 10.5
+  batch_size: 4
+  iterations: 30
+  cfg_scale: 10.5
+  restore_faces: true
+  sizes:
+    _default:
+      width: 512
+      height: 512
+      batch_size: 4
+    square:
+      width: 512
+      height: 512
+      batch_size: 4
+    portrait:
+      width: 600
+      height: 800
+      batch_size: 2
+    landscape:
+      width: 1024
+      height: 576
+      batch_size: 1
+
+authentication:
+  discord: ''
+prefix: '~'
